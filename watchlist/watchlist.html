@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Watchlist</title>
+
+    <!-- Etapa 1 em diante: seu arquivo de estilos virá aqui -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ════════════════════════════════════════
+         CABEÇALHO DA APLICAÇÃO
+         Etapa 1: exibir o título.
+         Etapas futuras: pode receber contadores (ex: "12 filmes · 4 assistidos")
+    ════════════════════════════════════════ -->
+    <header id="cabecalho">
+      <h1>🎬 Minha Watchlist</h1>
+
+      <!-- Etapa 5: os controles de filtro e busca entram aqui -->
+      <div id="controles">
+
+        <!-- Etapa 5: campo de busca por título -->
+        <input
+          type="text"
+          id="campo-busca"
+          placeholder="Buscar filme..."
+          disabled
+        />
+
+        <!-- Etapa 5: filtro por status (Todos / Para assistir / Assistido) -->
+        <select id="filtro-status" disabled>
+          <option value="todos">Todos</option>
+          <option value="para-assistir">Para assistir</option>
+          <option value="assistido">Assistido</option>
+        </select>
+
+      </div>
+    </header>
+
+    <!-- ════════════════════════════════════════
+         FORMULÁRIO DE CADASTRO
+         Etapa 3: você vai ativar e validar este formulário.
+         Etapa 4: ao submeter, o filme deve ser salvo no localStorage.
+         Por ora, deixe-o com o atributo disabled nos campos.
+    ════════════════════════════════════════ -->
+    <section id="secao-formulario">
+      <h2>Adicionar Filme</h2>
+
+      <form id="formulario-filme">
+
+        <div class="grupo-campo">
+          <label for="input-titulo">Título</label>
+          <input type="text" id="input-titulo" placeholder="Ex: Interestelar" disabled />
+          <!-- Etapa 3: mensagem de erro aparece aqui -->
+          <span class="mensagem-erro" id="erro-titulo"></span>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="input-genero">Gênero</label>
+          <input type="text" id="input-genero" placeholder="Ex: Ficção Científica" disabled />
+          <span class="mensagem-erro" id="erro-genero"></span>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="input-ano">Ano</label>
+          <input type="number" id="input-ano" placeholder="Ex: 2014" disabled />
+          <span class="mensagem-erro" id="erro-ano"></span>
+        </div>
+
+        <button type="submit" id="btn-adicionar" disabled>Adicionar</button>
+
+      </form>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         LISTA DE FILMES
+         Etapa 1: você vai popular esta lista via JavaScript.
+         Cada filme será um card filho desta <ul>.
+         Etapa 2: cada card receberá botão e classe de status.
+         Etapa 3: novos filmes do formulário entram aqui também.
+    ════════════════════════════════════════ -->
+    <main id="secao-lista">
+      <h2>Filmes</h2>
+
+      <ul id="lista-filmes">
+        <!-- Os cards dos filmes serão inseridos aqui pelo JavaScript -->
+      </ul>
+    </main>
+
+    <!-- ════════════════════════════════════════
+         ESTRUTURA DE UM CARD (referência visual — não renderiza)
+         Quando a Etapa 1 começar, você vai recriar esta estrutura
+         dinamicamente com JavaScript. Este bloco é só para você
+         visualizar o que precisa construir. Apague-o quando quiser.
+
+         <li class="card-filme">
+           <div class="info-filme">
+             <h3 class="titulo-filme">Interestelar</h3>
+             <p class="genero-filme">Ficção Científica</p>
+             <p class="ano-filme">2014</p>
+             <p class="status-filme">Para assistir</p>
+           </div>
+
+           Etapa 2: botão de ação do card
+           <div class="acoes-filme">
+             <button class="btn-status">Marcar como assistido</button>
+             Etapa 4: botão de remoção entra aqui
+             <button class="btn-remover">Remover</button>
+           </div>
+         </li>
+    ════════════════════════════════════════ -->
+
+    <!-- ════════════════════════════════════════
+         SCRIPTS
+         Etapa 1 em diante: seu arquivo principal.
+         Etapa 6 (refatoração): a estrutura interna do JS muda,
+         mas esta linha permanece igual.
+    ════════════════════════════════════════ -->
+    <script src="app.js"></script>
+
+  </body>
+</html>
