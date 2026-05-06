@@ -1,0 +1,30 @@
+.header-stack {
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+        font: var(--h1);
+        color: var(--color-dark-surface);
+    }
+
+    & .login-nav .login-- {
+        font-size: var(--size-2);
+        color: var(--color-dark-surface);
+        cursor: pointer;
+
+        transition: 0.2s ease-in-out;
+        will-change: transform;
+
+        &:hover {
+            color: var(--color-quinary);
+            transform: scale(1.05);
+        }
+        
+    }
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}

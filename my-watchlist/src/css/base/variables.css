@@ -1,0 +1,58 @@
+:root {
+    /* ------ Colors ------------------------- */
+    --gray: hsla(0, 0%, 95%, 0.774);
+    --color-surface: hsl(60, 100%, 96%);
+    --color-dark-surface: hsl(33, 36%, 11%);
+
+    --color-primary: hsl(62, 21%, 33%);
+    --color-secondary: hsl(68, 18%, 58%);
+    --color-tertiary: hsl(40, 29%, 71%);
+    --color-quaternary: hsl(32, 35%, 22%);
+    --color-quinary: hsl(39, 46%, 54%);
+    --color-senary: hsl(84, 42%, 18%);
+
+    
+    
+    /* ------ Font ----- */
+    --font-main-sans: 'Manrope', sans-serif;
+    --font-primary-title: 'Cinzel', serif;
+    --font-secondary-sans: 'Poppins', sans-serif;
+
+    --h1: 700 clamp(1.8rem, 4.5vw, 2.2rem) var(--font-primary-title);
+
+
+    /* ------ Sizes ----- */
+    --size-1: 0.8rem;
+    --size-2: 1.2rem;
+    --size-3: 1.6rem;
+    --size-4: 2.4rem;
+    --size-5: 3.2rem;
+    
+    /* ------ Spacing ----- */
+    --spacing-base: 1rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    
+    --spacing-1: 0.8rem;
+    --spacing-2: 1.2rem;
+    --spacing-3: 1.6rem;
+    --spacing-4: 2.4rem;
+    --spacing-5: 3.2rem;
+
+    /* ----- Shadow ----- */
+    --shadow-s: inset 
+    0 1px 2px #ffffff30,
+    0 1px 2px #00000030,
+    0 2px 4px #00000015;
+
+    --shadow-m: inset 
+    0 1px 2px #ffffff50,
+    0 2px 4px #00000030, 
+    0 4px 8px #00000015;
+
+    --shadow-l: inset 
+    0 1px 2px #ffffff70,
+    0 4px 6px #00000030,
+    0 6px 10px #00000015;
+}
