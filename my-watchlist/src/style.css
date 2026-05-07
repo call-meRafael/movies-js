@@ -20,9 +20,12 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     max-width: 90rem;
     margin-inline: auto;
-    background: var(--color-surface);
+    background: var(--color-);
     font-family: var(--font-main-sans);
 
     padding-block: var(--spacing-md);

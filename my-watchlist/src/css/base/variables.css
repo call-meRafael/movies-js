@@ -69,3 +69,8 @@
 
     background-color: var(--color-quinary);
 }
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
