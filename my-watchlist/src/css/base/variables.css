@@ -1,6 +1,7 @@
 :root {
     /* ------ Colors ------------------------- */
     --gray: hsla(0, 0%, 95%, 0.774);
+    --white: hsl(0, 0%, 100%);
     --color-surface: hsl(60, 100%, 96%);
     --color-dark-surface: hsl(33, 36%, 11%);
 
@@ -55,4 +56,16 @@
     0 1px 2px #ffffff70,
     0 4px 6px #00000030,
     0 6px 10px #00000015;
+}
+
+/* --------- utility classes --------- */
+.btn {
+    padding-inline: var(--spacing-1);
+    padding-block: var(--spacing-sm);
+    border-radius: 100px;
+    border: none;
+    font-family: inherit;
+    will-change: scale, box-shadow;
+
+    background-color: var(--color-quinary);
 }

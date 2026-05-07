@@ -22,7 +22,10 @@ html {
 body {
     max-width: 90rem;
     margin-inline: auto;
-    background: var(--gray);
+    background: var(--color-surface);
     font-family: var(--font-main-sans);
+
+    padding-block: var(--spacing-md);
+    padding-inline: var(--spacing-sm);
 
 }

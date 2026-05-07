@@ -1,23 +1,52 @@
 .header-stack {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    box-shadow: var(--shadow-s);
+    border-radius: 100px;
+    padding-block: var(--spacing-sm);
+    padding-inline: var(--spacing-sm);
+    background-color: var(--white);
 
     & h1 {
         font: var(--h1);
         color: var(--color-dark-surface);
+        filter: drop-shadow(2px 1px 1px var(--color-tertiary));
+        text-transform: uppercase;
+
+        background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.3em;
+        background-position: 0 80%;
     }
 
     & .login-nav .login-- {
-        font-size: var(--size-2);
-        color: var(--color-dark-surface);
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        font-size: var(--size-1);
+        font-weight: 700;
+        background-color: #FAA000;
+        color: var(--color-surface);
         cursor: pointer;
+        box-shadow: 0 0 4px var(--color-dark-surface);
+        text-shadow: 1px 1px 1px hsla(0, 0%, 1%, 0.521);
 
-        transition: 0.2s ease-in-out;
-        will-change: transform;
+        transition: all 0.3s ease;
+        will-change: box-shadow;
+
+        
 
         &:hover {
-            color: var(--color-quinary);
-            transform: scale(1.05);
+            background-color: #fa9e00c5;
+            box-shadow: 0 0 4px var(--color-dark-surface);
+            
+        }
+
+        & .login-icon {
+            color: var(--white);
+            filter: drop-shadow(1px 1px 1px hsl(0, 0%, 15%));
         }
         
     }
@@ -27,4 +56,17 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+
+    & .user-icon {
+        width: 32px;
+        height: 32px;
+        /* box-shadow: var(--shadow-m); */
+        border-radius: 50%;
+        transition: 0.2s ease;
+    }
+
+    & .user-icon:hover {
+        color: var(--color-quinary);
+        transform: scale(1.1);
+    }
 }

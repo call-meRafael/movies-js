@@ -9,6 +9,12 @@
     box-shadow: var(--shadow-l);
 
     background: var(--color-surface);
+    
+
+    &::backdrop {
+        backdrop-filter: blur(5px);
+        background-color: 0 0 0 0.5 var(--color-dark-surface);
+    }
 }
 
 .login-call {
